@@ -2,10 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:widgets_07/widgets/custom_text_field.dart';
 
 class LoginRegister extends StatefulWidget {
-  static const String ROUTE = "/login_register";
+  static const String route = "/login_register";
+
+  const LoginRegister({super.key});
 
   @override
-  _LoginRegisterState createState() => _LoginRegisterState();
+  State<LoginRegister> createState() => _LoginRegisterState();
 }
 
 class _LoginRegisterState extends State<LoginRegister>
@@ -70,11 +72,13 @@ class _LoginRegisterState extends State<LoginRegister>
                         obscureText: true,
                       ),
                     ),
-                    RaisedButton(
-                        color: Theme.of(context).primaryColor,
+                    ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: Theme.of(context).colorScheme.primary,
+                          foregroundColor: Colors.white,
+                        ),
                         child: Text(
                           _loginView ? "Login" : "Registrarse",
-                          style: TextStyle(color: Colors.white),
                         ),
                         onPressed: () {}),
                     Spacer(),

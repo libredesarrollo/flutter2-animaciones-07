@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:widgets_07/widgets/custom_image.dart';
 
 class ImagesPage extends StatelessWidget {
-  static const String ROUTE = "/images";
+  static const String route = "/images";
+
+  const ImagesPage({super.key});
 
   @override
   Widget build(BuildContext context) {

@@ -1,36 +1,38 @@
-import 'dart:math' as Math;
+import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
 
 class Box2Page extends StatefulWidget {
-  static const String ROUTE = "/box2";
+  static const String route = "/box2";
+
+  const Box2Page({super.key});
 
   @override
-  _Box2PageState createState() => _Box2PageState();
+  State<Box2Page> createState() => _Box2PageState();
 }
 
 class _Box2PageState extends State<Box2Page> {
   double _width = 50, _height = 50;
   Color _color = Colors.purple;
-  BorderRadius _borderRadius = BorderRadius.circular(8);
+  final BorderRadius _borderRadius = BorderRadius.circular(8);
 
   Offset _offset = Offset(1.5, 2.0);
 
   @override
   Widget build(BuildContext context) {
-    final random = Math.Random();
+    final random = math.Random();
 
     return Scaffold(
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.update),
         onPressed: () {
-          this._width = random.nextInt(200).toDouble();
-          this._height = random.nextInt(200).toDouble();
+          _width = random.nextInt(200).toDouble();
+          _height = random.nextInt(200).toDouble();
 
-          this._color = Color.fromRGBO(random.nextInt(256), random.nextInt(256),
+          _color = Color.fromRGBO(random.nextInt(256), random.nextInt(256),
               random.nextInt(256), random.nextDouble());
 
-          this._offset = Offset(
+          _offset = Offset(
             random.nextInt(15).toDouble(),
             random.nextInt(15).toDouble(),
           );
@@ -51,9 +53,9 @@ class _Box2PageState extends State<Box2Page> {
                 BoxShadow(
                     offset: _offset, color: Colors.black38, blurRadius: random.nextInt(50).toDouble())
               ]),
-          width: this._width,
-          height: this._height,
-          child: Text("${this._width} x ${this._height}"),
+          width: _width,
+          height: _height,
+          child: Text("$_width x $_height"),
         ),
       ),
     );

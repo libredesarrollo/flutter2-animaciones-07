@@ -1,0 +1,65 @@
+Actua como experto redactor y quiero que generes un capitulo para mi libro sobre Flutter
+
+Lee la carpeta de:
+
+sub
+
+En donde estan los subtitulos autogenerados en orden incremental (1,2,3...)  que fueron usados para crear el proyecto que actualizastes antes
+
+EL capitulo que vas a crear va a ser parte de un libro sobre Flutter, el proyecto en flutter que tienes en tu ambiente de trabajo esta el codigo fuente del cual debes de tomar trozos de codigo para colocar en la redaccion.
+
+El tema es:
+
+Algo de estilos e Introducción a las animaciones
+
+Crea cap.html con html sin formato, NO agreges atributos innecesarios ni clases
+
+Este son los titulos de los videos por si te sirve
+
+Clase 194:
+Creando un nuevo proyecto
+(Vista previa habilitada)
+Clase 195:
+Adaptaciones al Null Safety
+Clase 196:
+Creando el layout base de nuestra app
+Clase 197:
+Crear una página para el login o el registro
+Clase 198:
+Campo de texto; Crear un campo de texto agradable a la vista
+Clase 199:
+Campo de texto; Hacer reutilizable
+Clase 200:
+Definir resto de los campos
+Clase 201:
+Adaptar la página para el registro
+Clase 202:
+Animar el escalado de la carta
+Clase 203:
+AnimatedBuilder, Animando una caja: Escalado
+Clase 204:
+AnimatedBuilder, Animando una caja: Animación infinita
+Clase 205:
+AnimatedBuilder, Animando una caja: Rotación, translación y opacidad
+Clase 206:
+AnimatedBuilder, Variar colores
+Clase 207:
+AnimatedBuilder, Encadenar animaciones
+Clase 208:
+Función repeat
+Clase 209:
+AnimatedContainer
+Clase 210:
+AnimatedContainer, más propiedades
+Clase 211:
+Pruebas con el contenedor para el login: AnimatedBuilder y AnimatedContainer
+Clase 212:
+Animar el campo de texto para repetir la contraseña
+Clase 213:
+Componente para las imágenes
+Clase 214:
+Componente para las imágenes, Efecto Fade en la carga
+Clase 215:
+Componente para las imágenes, Efecto de traslado
+Clase 216:
+Componente para las imágenes, Efecto de traslado con listeners

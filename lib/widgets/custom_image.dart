@@ -3,10 +3,10 @@ import 'package:flutter/material.dart';
 class CustomImage extends StatefulWidget {
   final String urlRoute;
 
-  const CustomImage({required this.urlRoute});
+  const CustomImage({super.key, required this.urlRoute});
 
   @override
-  _CustomImageState createState() => _CustomImageState();
+  State<CustomImage> createState() => _CustomImageState();
 }
 
 class _CustomImageState extends State<CustomImage>

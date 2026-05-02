@@ -1,6 +1,7 @@
-# widgets_07
+# Flutter Animaciones (07)
 
-A new Flutter project.
+Proyecto de Flutter enfocado en animaciones, actualizado a Dart 3 y Flutter 3 (2026).
+Este proyecto demuestra el uso de `AnimatedContainer`, `AnimatedBuilder`, `FadeInImage` y controladores de animación personalizados.
 
 ## Getting Started
 

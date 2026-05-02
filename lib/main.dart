@@ -9,22 +9,28 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'App widgets',
       debugShowCheckedModeBanner: false,
-      initialRoute: BoxPage.ROUTE,
+      initialRoute: BoxPage.route,
       theme:  ThemeData(
-        primaryColor: Colors.purple,
-        accentColor: Colors.orange
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: Colors.purple,
+          primary: Colors.purple,
+          secondary: Colors.orange,
+        ),
+        useMaterial3: true,
       ),
       routes: {
-        LoginRegister.ROUTE : (_) => LoginRegister(),
-        BoxPage.ROUTE : (_) => BoxPage(),
-        Box2Page.ROUTE : (_) => Box2Page(),
-        ImagesPage.ROUTE : (_) => ImagesPage(),
+        LoginRegister.route : (_) => LoginRegister(),
+        BoxPage.route : (_) => BoxPage(),
+        Box2Page.route : (_) => Box2Page(),
+        ImagesPage.route : (_) => ImagesPage(),
       },
     );
   }

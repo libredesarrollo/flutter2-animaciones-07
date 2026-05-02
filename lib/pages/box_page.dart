@@ -1,12 +1,14 @@
-import 'dart:math' as Math;
+import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
 
 class BoxPage extends StatefulWidget {
-  static const String ROUTE = "/box";
+  static const String route = "/box";
+
+  const BoxPage({super.key});
 
   @override
-  _BoxPageState createState() => _BoxPageState();
+  State<BoxPage> createState() => _BoxPageState();
 }
 
 class _BoxPageState extends State<BoxPage> with SingleTickerProviderStateMixin {
@@ -32,7 +34,7 @@ class _BoxPageState extends State<BoxPage> with SingleTickerProviderStateMixin {
             parent: _animationController,
             curve: Interval(0.25, .5, curve: Curves.linear)));
 
-    _rotationAnimation = Tween<double>(begin: 0.0, end: 2.0 * Math.pi).animate(
+    _rotationAnimation = Tween<double>(begin: 0.0, end: 2.0 * math.pi).animate(
         CurvedAnimation(
             parent: _animationController,
             curve: Interval(0.3, .75, curve: Curves.linear)));
