@@ -17,7 +17,7 @@ class _BoxPageState extends State<BoxPage> with SingleTickerProviderStateMixin {
 
   late Animation<Offset> _translateAnimate;
 
-  late Animatable<Color> backgroundAnimate;
+  late Animatable<Color?> backgroundAnimate;
 
   @override
   void initState() {
@@ -56,14 +56,14 @@ class _BoxPageState extends State<BoxPage> with SingleTickerProviderStateMixin {
 
     //**************COLORES */
 
-    backgroundAnimate = TweenSequence<Color>([
+    backgroundAnimate = TweenSequence<Color?>([
       TweenSequenceItem(
           weight: 2.0,
-          tween: Tween(begin: Colors.red, end: Colors.green)), //ColorTween
+          tween: ColorTween(begin: Colors.red, end: Colors.green)),
       TweenSequenceItem(
-          weight: 1.0, tween: Tween(begin: Colors.green, end: Colors.blue)),
+          weight: 1.0, tween: ColorTween(begin: Colors.green, end: Colors.blue)),
       TweenSequenceItem(
-          weight: 1.0, tween: Tween(begin: Colors.blue, end: Colors.purple))
+          weight: 1.0, tween: ColorTween(begin: Colors.blue, end: Colors.purple))
     ]);
 
     super.initState();

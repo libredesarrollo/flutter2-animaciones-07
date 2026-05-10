@@ -1,17 +1,38 @@
-# Flutter Animaciones (07)
+# Flutter Widgets & Animations (widgets_07)
 
-Proyecto de Flutter enfocado en animaciones, actualizado a Dart 3 y Flutter 3 (2026).
-Este proyecto demuestra el uso de `AnimatedContainer`, `AnimatedBuilder`, `FadeInImage` y controladores de animación personalizados.
+Este proyecto es una exploración práctica de los widgets fundamentales y el sistema de animaciones de Flutter. Forma parte de una serie de ejercicios diseñados para dominar la creación de interfaces dinámicas y fluidas.
 
-## Getting Started
+## 🚀 Características
 
-This project is a starting point for a Flutter application.
+En este repositorio encontrarás implementaciones detalladas de:
 
-A few resources to get you started if this is your first Flutter project:
+*   **Animaciones Complejas**: Uso de `AnimationController`, `CurvedAnimation` e `Interval` para encadenar efectos.
+*   **Transformaciones Geométricas**: Escalado, rotación y traslación de elementos en tiempo real.
+*   **Secuencias de Colores**: Interpolación avanzada de colores mediante `TweenSequence` y `ColorTween`.
+*   **Interfaces de Usuario**: Experimentos con flujos de Login y Registro animados.
+*   **Optimización**: Implementación de `AnimatedBuilder` para una gestión eficiente del renderizado.
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## 📚 Aprende más sobre Flutter
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Si quieres profundizar en el desarrollo de aplicaciones móviles con Flutter, te recomiendo el siguiente recurso:
+
+### 📖 Primeros pasos con Flutter
+Aprende desde las bases hasta conceptos avanzados con este libro completo:
+👉 [**Leer Libro: Primeros pasos con Flutter**](https://www.desarrollolibre.net/libros/primeros-pasos-flutter)
+
+---
+
+## 🛠️ Instalación
+
+1.  Clona el repositorio.
+2.  Ejecuta `flutter pub get` para instalar las dependencias.
+3.  Inicia la aplicación con `flutter run`.
+
+## 📂 Estructura de Páginas
+
+*   `BoxPage`: Animación integral de un contenedor (color, tamaño, posición).
+*   `LoginRegister`: Ejemplo de transición animada en formularios.
+*   `ImagesPage`: Visualización y manejo de recursos gráficos.
+
+---
+Desarrollado como parte del aprendizaje continuo en el ecosistema Flutter.
